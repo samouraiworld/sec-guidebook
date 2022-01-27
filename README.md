@@ -251,11 +251,12 @@ If an investigator is watching you, see a picture in Iceland where you describe 
 - Rekt.news : Be safe using DeFi (tbd)
 - Wagram Protection, Veritas : Take care of your physical protection (tbd)
 - some POV from ecosystem members (tbd)
+- Who should we interview?
 
 
 ---
 
-## How to secure your company's crypto? :man_in_business_suit_levitating:
+## How to secure your company's crypto? 
 - TBD
 
 
@@ -293,6 +294,11 @@ https://twitter.com/PowerHasheur/status/1486426960393867274
 ___
 ### :link: More tips link & guides
 
+9 tips
 https://cryptopotato.com/9-must-tips-securing-crypto-wallet/
+
+Protecting your funds
 https://support.mycrypto.com/staying-safe/protecting-yourself-and-your-funds/
+
+An other quick guide
 https://medium.com/mycrypto/mycryptos-security-guide-for-dummies-and-smart-people-too-ab178299c82e
