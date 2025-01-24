@@ -167,7 +167,7 @@ TBD
 
 
 
-## IRL Life : _"Rich & Anonymous is the new Rich & Famous"_ :ghost:
+## IRL Life : _"Free & Anonymous is the new Rich & Famous"_ :ghost:
 
 ### Be a fantom, a ninja, and care about details of your privacy.
 
@@ -245,7 +245,7 @@ If an investigator is watching you, see a picture in Iceland where you describe 
 ---
 
 ### Interviews from Experts : :studio_microphone:
-- Ledger Dondon (tbd)
+- Ledger Donjon (tbd)
 - Paymium : Be safe using exchanges (tbd)
 - Samouraï Wallet : Be safe using Bitcoin Wallets (tbd)
 - Rekt.news : Be safe using DeFi (tbd)
@@ -290,6 +290,9 @@ https://www.estrepublicain.fr/faits-divers-justice/2021/10/22/assassinat-a-planc
 
 Je viens de me faire agresser à mon domicile
 https://twitter.com/PowerHasheur/status/1486426960393867274
+
+Ledger co-founder kidnapped.
+https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html
 
 ___
 ### :link: More tips link & guides
