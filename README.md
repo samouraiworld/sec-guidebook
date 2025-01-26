@@ -243,6 +243,9 @@ If an investigator is watching you, see a picture in Iceland where you describe 
 
 
 ---
+### An interesting interview reporting the process of freezing funds:
+https://www.thebigwhale.io/article/nicolas-bacca-nous-avons-invente-un-modele-dorganisation-unique-pour-intervenir-dans-les-rancons-en-cryptomonnaies
+
 
 ### Interviews from Experts : :studio_microphone:
 - Ledger Donjon (tbd)
@@ -293,6 +296,9 @@ https://twitter.com/PowerHasheur/status/1486426960393867274
 
 Ledger co-founder kidnapped.
 https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html
+
+A french entrepreneur sequestred, Troyes, France
+https://www.lejdd.fr/Societe/info-jdd-troyes-un-autre-entrepreneur-en-cryptomonnaies-enleve-quatre-suspects-interpelles-154239
 
 ___
 ### :link: More tips link & guides
