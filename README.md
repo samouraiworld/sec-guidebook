@@ -311,12 +311,14 @@ For high-frequency trading or large institutional treasuries.
 
 1.  **Jan 2025 (Vierzon) - Ledger Co-Founder:** David Balland, co-founder of Ledger, was kidnapped at his home. Attackers **severed his finger** to force him to unlock devices.
       * *Source:* [Le Monde](https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html)
-2.  **May 2025 (Paris) - Paymium Family:** The daughter and grandson of Paymium CEO Pierre Noizat were targeted in a kidnapping attempt in Paris (11th arr.). Thwarted by locals.
-      * *Source:* [Hyperion Services](https://hyperionservices.co/bitcoin-crypto-kidnappings/)
-3.  **Nov 2025 (Maisons-Alfort) - The "Errand Boy":** A 23-year-old investor was kidnapped while running errands; forced to ransom his own Ledger + €5k cash.
-      * *Source:* [The Block](https://www.theblock.co/post/359010/france-hit-by-10th-crypto-wrench-attack-of-2025-as-kidnappers-target-23-year-old-near-paris)
-4.  **Jan 2025 (Troyes) - The Trap:** A 30-year-old entrepreneur lured to a fake client meeting, kidnapped by 4 men. Rescued by police.
+2.  **Jan 2025 (Troyes) - The Trap:** A 30-year-old entrepreneur lured to a fake client meeting, kidnapped by 4 men. Rescued by police.
       * *Source:* [JDD](https://www.lejdd.fr/Societe/info-jdd-troyes-un-autre-entrepreneur-en-cryptomonnaies-enleve-quatre-suspects-interpelles-154239)
+3.  **May 2025 (Paris) - Paymium Family:** The daughter and grandson of Paymium CEO Pierre Noizat were targeted in a kidnapping attempt in Paris (11th arr.). Thwarted by locals.
+      * *Source:* [Hyperion Services](https://hyperionservices.co/bitcoin-crypto-kidnappings/)
+4.  **Nov 2025 (Maisons-Alfort) - The "Errand Boy":** A 23-year-old investor was kidnapped while running errands; forced to ransom his own Ledger + €5k cash.
+      * *Source:* [The Block](https://www.theblock.co/post/359010/france-hit-by-10th-crypto-wrench-attack-of-2025-as-kidnappers-target-23-year-old-near-paris)  
+5.  **Nov 2025 (Chalons sur Saone) -Attempted kidnapping? Screwdrivers, crowbars, masks... a whole arsenal seized**
+      * *Source:* [JSL](https://www.lejsl.com/faits-divers-justice/2025/11/25/tentative-d-enlevement-tournevis-pied-de-biche-masques-tout-un-attirail-saisi)
 
 ### Canada
 
