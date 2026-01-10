@@ -230,7 +230,7 @@ For high-frequency trading or large institutional treasuries.
 
 | Year | Entity | Amount Lost | Vector | Lesson |
 | :--- | :--- | :--- | :--- | :--- |
-| **2025** | **Bybit** | **$1.5B** | Hot Wallet / Key Leak | **Largest crypto theft in history.** Attributed to Lazarus Group. |
+| **Feb 2025** | **Bybit** | **$1.5B** | Hot Wallet / Key Leak | **Largest crypto theft in history.** Attributed to Lazarus Group. |
 | **2024** | **DMM Bitcoin** | $305M | Social Eng. / Wallet | Fake job offers to employees allowed deep system access. |
 | **2022** | **FTX / Alameda** | ~$477M | Insider / Sim Swap | The "Bank Run" hack. Occurred immediately after bankruptcy filing. |
 | **2018** | **Coincheck** | $530M | Phishing / Hot Wallet | Employee opened a malware email. Funds (NEM) were in hot wallets. |
@@ -288,16 +288,17 @@ For high-frequency trading or large institutional treasuries.
 
 *A dedicated section for the world's most dangerous crypto-threat actor. The DPRK uses stolen crypto to fund weapons programs. They account for an estimated **$3 Billion+** in thefts.*
 
+
 | Year | Victim | Amount (Est.) | Vector | Source/Details |
 | :--- | :--- | :--- | :--- | :--- |
-| **2025** | **Bybit** | **$1.5 Billion** | Supply Chain / Key Leak | Largest single heist. Suspected to involve Safe{Wallet} supply chain or deep social engineering. [Source](https://crystalintelligence.com/investigations/the-10-biggest-crypto-hacks-in-history/) |
-| **2024** | **DMM Bitcoin** | $305 Million | Social Engineering | Attackers likely infiltrated the Japanese exchange via fake job offers to staff. [Source](https://www.google.com/search?q=https://www.elliptic.co/blog/dmm-bitcoin-suffers-305-million-hack) |
-| **2024** | **WazirX** | $235 Million | Multisig Compromise | Breached the Indian exchange's multisig. [Source](https://www.google.com/search?q=https://techcrunch.com/2024/07/18/wazirx-india-crypto-hack/) |
-| **2023** | **Atomic Wallet** | $100 Million | Supply Chain / Update | Malicious update pushed to users of the non-custodial wallet. [Source](https://www.google.com/search?q=https://www.elliptic.co/blog/analysis-of-the-atomic-wallet-hack) |
-| **2023** | **Stake.com** | $41 Million | Private Key Leak | Targeted the world's largest crypto casino. [Source](https://www.google.com/search?q=https://www.coindesk.com/business/2023/09/04/stake-suspected-exploit/) |
-| **2023** | **CoinEx** | $55 Million | Hot Wallet Keys | Compromised hot wallet keys. [Source](https://www.google.com/search?q=https://www.chainalysis.com/blog/coinex-hack-lazarus-group/) |
-| **2022** | **Ronin Bridge** | $625 Million | Social Engineering | Fake job interview (PDF malware) gave access to Sky Mavis validator nodes. [Source](https://www.google.com/search?q=https://www.fbi.gov/news/press-releases/fbi-statement-on-attribution-of-malicious-cyber-activity-to-the-lazarus-group-and-apt38) |
-| **2022** | **Harmony Horizon** | $100 Million | Private Key Theft | Bridge keys stolen. Funds laundered via Tornado Cash. [Source](https://www.google.com/search?q=https://www.elliptic.co/blog/harmony-horizon-bridge-hack-analysis) |
+| **Feb 2025** | **Bybit** | **$1.5 Billion** | Supply Chain / Key Leak | Largest single heist. Attributed to Lazarus Group. [Source](https://www.chainalysis.com/blog/2025-crypto-crime-report-preview-lazarus-group-hack/) |
+| **2024** | **DMM Bitcoin** | $305 Million | Social Engineering | Attackers likely infiltrated the Japanese exchange via fake job offers to staff. [Source](https://www.elliptic.co/blog/analysis/dmm-bitcoin-suffers-305-million-hack) |
+| **2024** | **WazirX** | $235 Million | Multisig Compromise | Breached the Indian exchange's multisig. [Source](https://techcrunch.com/2024/07/18/indias-wazirx-crypto-exchange-halt-withdrawals-after-cyberattack/) |
+| **2023** | **Atomic Wallet** | $100 Million | Supply Chain / Update | Malicious update pushed to users of the non-custodial wallet. [Source](https://www.elliptic.co/blog/analysis/analysis-of-the-atomic-wallet-hack) |
+| **2023** | **Stake.com** | $41 Million | Private Key Leak | Targeted the world's largest crypto casino. [Source](https://www.coindesk.com/business/2023/09/04/crypto-casino-stake-targeted-in-suspected-41m-exploit/) |
+| **2023** | **CoinEx** | $55 Million | Hot Wallet Keys | Compromised hot wallet keys. [Source](https://www.chainalysis.com/blog/coinex-hack-lazarus-group-north-korea/) |
+| **2022** | **Ronin Bridge** | $625 Million | Social Engineering | Fake job interview (PDF malware) gave access to Sky Mavis validator nodes. [Source](https://www.fbi.gov/news/press-releases/fbi-statement-on-attribution-of-malicious-cyber-activity-to-the-lazarus-group-and-apt38) |
+| **2022** | **Harmony Horizon** | $100 Million | Private Key Theft | Bridge keys stolen. Funds laundered via Tornado Cash. [Source](https://www.elliptic.co/blog/analysis/over-1-billion-stolen-from-bridges-so-far-in-2022-as-harmony-s-horizon-bridge-becomes-latest-victim-in-100-million-hack/) |
 
 -----
 
@@ -305,49 +306,62 @@ For high-frequency trading or large institutional treasuries.
 
 *Digital security means nothing when a gun is pointed at your head.*
 
-### France (The 2024-2025 Surge)
+### France (The 2024-2026 Surge)
 
 *France has recently become a primary target zone for physical crypto extortion.*
 
-1.  **Jan 2025 (Vierzon) - Ledger Co-Founder:** David Balland, co-founder of Ledger, was kidnapped at his home. Attackers **severed his finger** to force him to unlock devices.
-      * *Source:* [Le Monde](https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html)
-2.  **Jan 2025 (Troyes) - The Trap:** A 30-year-old entrepreneur lured to a fake client meeting, kidnapped by 4 men. Rescued by police.
-      * *Source:* [JDD](https://www.lejdd.fr/Societe/info-jdd-troyes-un-autre-entrepreneur-en-cryptomonnaies-enleve-quatre-suspects-interpelles-154239)
-3.  **May 2025 (Paris) - Paymium Family:** The daughter and grandson of Paymium CEO Pierre Noizat were targeted in a kidnapping attempt in Paris (11th arr.). Thwarted by locals.
-      * *Source:* [Hyperion Services](https://hyperionservices.co/bitcoin-crypto-kidnappings/)
-4.  **Nov 2025 (Maisons-Alfort) - The "Errand Boy":** A 23-year-old investor was kidnapped while running errands; forced to ransom his own Ledger + €5k cash.
-      * *Source:* [The Block](https://www.theblock.co/post/359010/france-hit-by-10th-crypto-wrench-attack-of-2025-as-kidnappers-target-23-year-old-near-paris)  
-5.  **Nov 2025 (Chalons sur Saone) -Attempted kidnapping? Screwdrivers, crowbars, masks... a whole arsenal seized**
-      * *Source:* [JSL](https://www.lejsl.com/faits-divers-justice/2025/11/25/tentative-d-enlevement-tournevis-pied-de-biche-masques-tout-un-attirail-saisi)
+1.  **Jan 2025 (Vierzon) - Ledger Co-Founder:** David Balland, co-founder of Ledger, was kidnapped at his home. Attackers severed his finger to force him to unlock devices.
+    * *Source:* [DL News](https://www.dlnews.com/articles/people-culture/ledger-co-founder-david-balland-victim-of-violent-kidnapping/) | [Le Monde](https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html)
+2.  **Jan 2025 (Troyes) - The Trap:** A 30-year-old entrepreneur lured to a fake client meeting, kidnapped by 4 men.
+    * *Source:* [JDD](https://www.lejdd.fr/Societe/info-jdd-troyes-un-autre-entrepreneur-en-cryptomonnaies-enleve-quatre-suspects-interpelles-154239)
+3.  **May 2025 (Paris) - Paymium Family:** The daughter and grandson of Paymium CEO Pierre Noizat were targeted in a kidnapping attempt in Paris.
+    * *Source:* [Hyperion Services](https://hyperionservices.co/bitcoin-crypto-kidnappings/)
+4.  **June 2025 (Maisons-Alfort) - The "Errand Boy":** A 23-year-old investor was kidnapped while running errands; forced to ransom his own Ledger + €5k cash.
+    * *Source:* [FinanceFeeds](https://financefeeds.com/tenth-crypto-kidnapping-in-france-alarms-community/) | [Le Parisien](https://www.leparisien.fr/val-de-marne-94/maisons-alfort-enleve-et-sequestre-pour-ses-cryptomonnaies-19-06-2025-8LZ4.php)
+5.  **Dec 2025 (Charente-Maritime) - The Couple:** A couple in Dompierre-sur-Mer was sequestered and robbed of ~€9 million in cryptocurrency.
+    * *Source:* [Capital.fr](https://www.capital.fr/votre-argent/braquage-a-dompierre-sur-mer-un-couple-deleste-de-9-millions-deuros-en-crypto-1502541) | [CNews](https://www.cnews.fr/france/2025-12-19/charente-maritime-un-couple-sequestre-et-depouille-de-plusieurs-millions-deuros)
+6.  **Dec 2025 (Val-d'Oise) - The Father:** The father of a crypto entrepreneur was kidnapped in broad daylight to extort his son.
+    * *Source:* [Cryptoast](https://cryptoast.fr/enlevement-pere-famille-val-doise-rancon-crypto/)
+7.  **Jan 2026 (Cholet) - The "Software Architect":** A 43-year-old crypto investor was kidnapped at his home, tied up, and released 50km away.
+    * *Source:* [Ouest France](https://www.ouest-france.fr/societe/faits-divers/jai-entendu-des-cris-dans-la-rue-enleve-au-petit-matin-pour-ses-cryptomonnaies-pres-de-cholet-f97a7740-ed71-11f0-ae78-1a0629cc1f87)
+8.  **Jan 2026 (Manosque) - Home Invasion:** A woman was assaulted and sequestered at her home by attackers demanding her crypto keys.
+    * *Source:* [Cointribune](https://www.cointribune.com/en/crypto-security-alert-new-violent-home-jacking-in-manosque/)
+
+### United Kingdom
+
+1.  **Nov 2025 (Oxford/London):** Five people traveling in a car were stopped by masked robbers and forced to transfer £1.1M in crypto.
+    * *Source:* [The Guardian](https://www.theguardian.com/uk-news/2025/nov/19/four-arrested-after-luxury-watch-cryptocurrency-stolen-oxford)
 
 ### Canada
 
-1.  **Nov 2024 (Toronto):** Dean Skurka (CEO of WonderFi) forced into a vehicle, held for $1M ransom. Released after payment.
-      * *Source:* [CBC](https://www.cbc.ca/news/canada/toronto/crypto-bitcoin-price-ceo-toronto-kidnapping-1.7378241)
-2.  **Dec 2022 (Ontario):** Aiden Pleterski ("Crypto King" Ponzi) kidnapped, beaten, and tortured for days by victims of his scheme.
+1.  **Nov 2024 (Toronto):** Dean Skurka (CEO of WonderFi) forced into a vehicle, held for $1M ransom.
+    * *Source:* [CBC](https://www.cbc.ca/news/canada/toronto/crypto-bitcoin-price-ceo-toronto-kidnapping-1.7378241)
+2.  **Dec 2022 (Ontario):** Aiden Pleterski ("Crypto King" Ponzi) kidnapped, beaten, and tortured.
+    * *Source:* [BBC](https://www.bbc.com/news/world-us-canada-69023845)
 
 ### United States
 
-1.  **May 2025 (New York):** "House of Horrors". An Italian entrepreneur lured to a Manhattan townhouse, held for 17 days and tortured for Bitcoin keys.
-      * *Source:* [CBC News](https://www.cbc.ca/news/world/world-us-cryptocurrency-related-crimes-1.7546701)
-2.  **May 2024 (Connecticut):** A couple rammed in their Lamborghini and abducted by attackers targeting their son's crypto wealth.
+1.  **May 2025 (New York):** "House of Horrors". An Italian entrepreneur lured to a Manhattan townhouse, held for 17 days.
+    * *Source:* [CBC News](https://www.cbc.ca/news/world/world-us-cryptocurrency-related-crimes-1.7546701)
+2.  **May 2024 (Connecticut):** A couple rammed in their Lamborghini and abducted.
+    * *Source:* [CNBC](https://www.cnbc.com/2024/10/17/cryptocurrency-theft-google-kidnapping-lamborghi-bar-.html)
 
-### Bulgaria
+### United Arab Emirates
 
-1.  **Aug 2023:** Christian Peev (US Investor). Murdered and dismembered; body found in plumbing pipes in Sofia.
+1.  **Oct 2025 (Dubai):** Roman Novak and his wife were kidnapped and later found murdered in the desert.
+    * *Source:* [DL News](https://www.dlnews.com/articles/people-culture/russian-crypto-millionaire-found-dead-in-dubai/)
 
-### Argentina
+### Hong Kong
 
-1.  **Jul 2023:** Fernando Pérez Algaba. Found shot and dismembered in a suitcase.
-
-### Spain
-
-1.  **Nov 2021:** Zaryn Dentzel (Tuenti Founder). Tortured in his Madrid home for hours by masked men.
+1.  **Dec 2025 (Sheung Wan) - The "Japanese Company" Heist:** Employees were robbed of $6.4M in cash/crypto by a gang.
+    * *Source:* [SCMP](https://www.scmp.com/news/hong-kong/law-and-crime/article/3337905/hong-kong-police-arrest-15-over-hk50-million-robbery-japanese-firm-staff)
 
 ### Thailand / Singapore
 
 1.  **Sep 2022 (Thailand):** Russian couple ambushed and forced to transfer $100k.
-2.  **Jan 2020 (Thailand):** Mark Cheng (Singaporean) kidnapped and tortured with electricity.
+    * *Source:* [Bangkok Post](https://www.bangkokpost.com/thailand/general/2401755/russian-realtors-lose-b1-8m-in-extortion)
+2.  **Jan 2020 (Thailand):** Mark Cheng (Singaporean) kidnapped.
+    * *Source:* [The Straits Times](https://www.straitstimes.com/asia/se-asia/singaporean-man-kidnapped-in-thailand-by-fellow-singaporean-ransom-paid-in-bitcoins)
 
 -----
 
