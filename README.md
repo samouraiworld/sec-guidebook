@@ -91,7 +91,11 @@ Let's build your configuration from scratch. Make yourself comfortable and let's
   - [ ] **Procurement:** Buy a hardware wallet.
       - **Warning:** Never order to your home address\! Use a P.O. Box, an Amazon Locker (if available for direct vendors), or a friend's office.
       - *Tip:* Create a dedicated pseudonym for the order.
-      - *Link:* [Ledger](https://shop.ledger.com/) (French, Secure Element) or [Coinkite](https://coinkite.com/) (Coldcard, Bitcoin Only).
+      - **Flagship 2025/2026 Models:**
+          - **Ledger Nano Gen5** ($179) - Clear signing & Ledger Wallet 4.0 ecosystem. [Link](https://shop.ledger.com/) | [Source](https://bitbox.swiss)
+          - **Trezor Safe 7** ($249) - Dual secure elements, color touchscreen. [Link](https://trezor.io/) | [Source](https://bitbo.io)
+          - **BitBox02 Nova** - Updated EAL6+ Infineon chip, Swiss-made. [Link](https://bitbox.swiss) | [Source](https://bitbox.swiss)
+          - **Coldcard Mk4 / Q** - 2026 firmware enables BIP-322 Proof of Reserve. [Link](https://coinkite.com/) | [Source](https://coinkite.com/)
 
 -----
 
@@ -100,11 +104,13 @@ Let's build your configuration from scratch. Make yourself comfortable and let's
 #### Bitcoin:
 
   - [ ] **Desktop: Sparrow Wallet**
-      - The gold standard for desktop Bitcoin wallets. Supports hardware wallets, Tor, and advanced "Coin Control" (choosing exactly which coins to spend to avoid linking your history).
+      - The gold standard for desktop Bitcoin wallets. Supports hardware wallets, Tor, "Coin Control", and "Stonewall" transactions (local coinjoin simulations). [Source](https://sparrowwallet.com)
       - *Link:* [Sparrow Wallet](https://sparrowwallet.com)
+  - [ ] **Desktop: Wasabi Wallet**
+      - *Note:* Its native CoinJoin coordinator was discontinued in 2024 due to regulatory pressure, but it remains functional via 3rd-party coordinators. [Source](https://cryptonews.com)
   - [ ] \~\~Samourai Wallet\~\~ *(Deprecated/Seized by DOJ 2024)*.
   - [ ] **Mobile: Envoy or Nunchuk**
-      - **Envoy:** Simple, privacy-focused, Tor built-in. Good for daily spending.
+      - **Envoy:** Simple, privacy-focused, Tor built-in. Frequent v2.2.x releases in early 2026 keep it robust. Good for daily spending.
       - **Nunchuk:** Security-focused, excellent for Multi-Sig and "Vault" setups.
   - [ ] **Run a Node:** Don't trust, verify. Run a RoninDojo or Umbrel node.
       - *Link:* [RoninDojo](https://ronindojo.io/)
@@ -154,6 +160,7 @@ The "Grey Man" theory applies here.
 ### Exchange Relations :bank:
 
   * **Whitelisting:** Enable "Withdrawal Address Whitelisting" on CEXs. If hacked, funds can only go to *your* hard wallet.
+  * **Withdraw Protection (2026 Defense):** Enable advanced time-lock features (e.g., Binance's "Withdraw Protection" introduced in May 2026) to freeze outgoing transfers for up to 7 days to counter physical coercion ($5 Wrench Attacks). [Source](https://news.bitcoin.com/)
   * **Anti-Phishing Code:** Set this up in exchange settings. Every legitimate email will contain your secret word. No word? It's a scam.
 
 -----
@@ -230,68 +237,72 @@ For high-frequency trading or large institutional treasuries.
 
 | Year | Entity | Amount Lost | Vector | Lesson |
 | :--- | :--- | :--- | :--- | :--- |
-| **Feb 2025** | **Bybit** | **$1.5B** | Hot Wallet / Key Leak | **Largest crypto theft in history.** Attributed to Lazarus Group. |
-| **2024** | **DMM Bitcoin** | $305M | Social Eng. / Wallet | Fake job offers to employees allowed deep system access. |
-| **2022** | **FTX / Alameda** | ~$477M | Insider / Sim Swap | The "Bank Run" hack. Occurred immediately after bankruptcy filing. |
-| **2018** | **Coincheck** | $530M | Phishing / Hot Wallet | Employee opened a malware email. Funds (NEM) were in hot wallets. |
-| **2016** | **Bitfinex** | $72M | Multi-sig Bypass | 120k BTC stolen. Money laundered years later by "Razzlekhan". |
-| **2014** | **Mt. Gox** | $460M | Malleability Bug | The original sin. 850k BTC lost. |
+| **Feb 2025** | **Bybit** | **$1.5B** | Supply Chain / JS Injection | **Largest crypto theft in history.** Safe{Wallet} development environment compromised by Lazarus Group. [Source](https://nsfocusglobal.com) |
+| **2024** | **DMM Bitcoin** | $305M | Social Eng. / Wallet | Fake job offers to employees allowed deep system access. [Source](https://chainalysis.com/blog/2024-crypto-hack-report/) |
+| **2022** | **FTX / Alameda** | ~$477M | Insider / Sim Swap | The "Bank Run" hack. Occurred immediately after bankruptcy filing. [Source](https://www.elliptic.co/blog/the-477-million-ftx-hack-a-new-blockchain-trail) |
+| **2018** | **Coincheck** | $530M | Phishing / Hot Wallet | Employee opened a malware email. Funds (NEM) were in hot wallets. [Source](https://www.coindesk.com/markets/2018/01/26/crypto-exchange-coincheck-halts-withdrawals-amid-hack-rumors/) |
+| **2016** | **Bitfinex** | $72M | Multi-sig Bypass | 120k BTC stolen. Money laundered years later by "Razzlekhan". [Source](https://www.justice.gov/opa/pr/two-arrested-alleged-conspiracy-launder-45-billion-stolen-cryptocurrency) |
+| **2014** | **Mt. Gox** | $460M | Malleability Bug | The original sin. 850k BTC lost. [Source](https://www.wired.com/2014/03/bitcoin-exchange/) |
 
 ### 🦄 DeFi Protocol Hacks (Last 5 Years - Top 40)
 
 | \# | Year | Protocol | Amount Lost | Vector |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | 2022 | **Ronin Network** | $625M | Social Engineering / Validator Compromise |
-| 2 | 2021 | **Poly Network** | $611M | Cross-Chain Contract Vulnerability |
-| 3 | 2022 | **Binance Bridge** | $570M | IAVL Proof Verification Exploit |
-| 4 | 2022 | **Wormhole** | $325M | Signature Verification Bypass |
-| 5 | 2024 | **Orbit Chain** | $81M | Bridge Multi-sig Compromise |
-| 6 | 2023 | **Euler Finance** | $197M | Flash Loan / Logic Error |
-| 7 | 2022 | **Nomad Bridge** | $190M | Logic Error (Copy-paste vulnerability) |
-| 8 | 2022 | **Beanstalk Farms** | $182M | Governance Flash Loan Attack |
-| 9 | 2022 | **Wintermute** | $160M | Profanity Tool (Vanity Address) Exploit |
-| 10 | 2023 | **Multichain** | $126M | MPC Key Leak / Insider Job |
-| 11 | 2021 | **Cream Finance** | $130M | Flash Loan (Price Manipulation) |
-| 12 | 2022 | **Harmony Horizon** | $100M | Private Key Theft (Lazarus) |
-| 13 | 2021 | **BadgerDAO** | $120M | Frontend Injection (Cloudflare) |
-| 14 | 2024 | **Munchables** | $62M | Rogue Developer (Insider) |
-| 15 | 2023 | **Curve Finance** | $61M | Vyper Compiler Bug (Reentrancy) |
-| 16 | 2021 | **Compound** | $80M | Comptroller Logic Error |
-| 17 | 2024 | **Radiant Capital** | $50M | Lending Logic / Flash Loan |
-| 18 | 2023 | **KyberSwap** | $48M | Infinite Approval Loop Bug |
-| 19 | 2022 | **Cashio** | $48M | Infinite Mint Glitch |
-| 20 | 2023 | **Socket / Bungee** | $3.3M | Approval Exploit |
-| 21 | 2021 | **Grim Finance** | $30M | Reentrancy |
-| 22 | 2021 | **Vee Finance** | $35M | Oracle Manipulation |
-| 23 | 2023 | **Yearn Finance** | $11M | Misconfigured Token (yUSDT) |
-| 24 | 2022 | **Rari Capital** | $80M | Reentrancy (Fuse Pools) |
-| 25 | 2023 | **Alphapo** | $60M | Hot Wallet Keys |
-| 26 | 2023 | **Stake.com** | $41M | Private Key Leak |
-| 27 | 2022 | **Mango Markets** | $114M | Oracle Price Manipulation (Avi Eisenberg) |
-| 28 | 2024 | **Hedgey Finance** | $44M | Arbitrary Call Vulnerability |
-| 29 | 2024 | **Sonne Finance** | $20M | Precision Loss / Empty Market Attack |
-| 30 | 2024 | **UwU Lend** | $19M | Price Manipulation |
-| 31 | 2023 | **Exactly Protocol** | $7M | Bridge Vulnerability |
-| 32 | 2023 | **Rho Markets** | $7.6M | Oracle Misconfiguration |
-| 33 | 2023 | **Galxe** | $0.4M | DNS Hijacking |
-| 34 | 2021 | **bZx (Ooki)** | $55M | Private Key Phishing |
-| 35 | 2021 | **EasyFi** | $80M | Admin Key Compromise |
-| 36 | 2022 | **Qubit Finance** | $80M | Bridge Deposit Bug |
-| 37 | 2022 | **Fei Protocol** | $80M | Reentrancy |
-| 38 | 2024 | **Gamma Strategies** | $6M | Reentrancy |
-| 39 | 2024 | **Abracadabra (MIM)** | $6.5M | Rounding Error |
-| 40 | 2021 | **PancakeBunny** | $200M | Flash Loan |
+| 1 | 2022 | **Ronin Network** | $625M | Social Engineering / Validator Compromise [Source](https://rekt.news/ronin-rekt/) |
+| 2 | 2021 | **Poly Network** | $611M | Cross-Chain Contract Vulnerability [Source](https://rekt.news/poly-network-rekt/) |
+| 3 | 2022 | **Binance Bridge** | $570M | IAVL Proof Verification Exploit [Source](https://rekt.news/bnb-bridge-rekt/) |
+| 4 | 2022 | **Wormhole** | $325M | Signature Verification Bypass [Source](https://rekt.news/wormhole-rekt/) |
+| - | 2026 | **Kelp DAO** | $292M | LayerZero V2 Bridge Exploit (Lazarus) [Source](https://cryptobriefing.com) |
+| - | 2026 | **Drift Protocol** | $285M | Social Eng. / Multisig (Lazarus) [Source](https://cryptobriefing.com) |
+| 5 | 2024 | **Orbit Chain** | $81M | Bridge Multi-sig Compromise [Source](https://rekt.news/orbit-chain-rekt/) |
+| 6 | 2023 | **Euler Finance** | $197M | Flash Loan / Logic Error [Source](https://rekt.news/euler-rekt/) |
+| 7 | 2022 | **Nomad Bridge** | $190M | Logic Error (Copy-paste vulnerability) [Source](https://rekt.news/nomad-rekt/) |
+| 8 | 2022 | **Beanstalk Farms** | $182M | Governance Flash Loan Attack [Source](https://rekt.news/beanstalk-rekt/) |
+| 9 | 2022 | **Wintermute** | $160M | Profanity Tool (Vanity Address) Exploit [Source](https://rekt.news/wintermute-rekt/) |
+| 10 | 2023 | **Multichain** | $126M | MPC Key Leak / Insider Job [Source](https://rekt.news/multichain-rekt/) |
+| 11 | 2021 | **Cream Finance** | $130M | Flash Loan (Price Manipulation) [Source](https://rekt.news/cream-rekt-2/) |
+| 12 | 2022 | **Harmony Horizon** | $100M | Private Key Theft (Lazarus) [Source](https://rekt.news/harmony-rekt/) |
+| 13 | 2021 | **BadgerDAO** | $120M | Frontend Injection (Cloudflare) [Source](https://rekt.news/badger-rekt/) |
+| 14 | 2024 | **Munchables** | $62M | Rogue Developer (Insider) [Source](https://rekt.news/munchables-rekt/) |
+| 15 | 2023 | **Curve Finance** | $61M | Vyper Compiler Bug (Reentrancy) [Source](https://rekt.news/curve-vyper-rekt/) |
+| 16 | 2021 | **Compound** | $80M | Comptroller Logic Error [Source](https://rekt.news/compound-rekt/) |
+| 17 | 2024 | **Radiant Capital** | $50M | Lending Logic / Flash Loan [Source](https://rekt.news/radiant-rekt/) |
+| 18 | 2023 | **KyberSwap** | $48M | Infinite Approval Loop Bug [Source](https://rekt.news/kyberswap-rekt/) |
+| 19 | 2022 | **Cashio** | $48M | Infinite Mint Glitch [Source](https://rekt.news/cashio-rekt/) |
+| 20 | 2023 | **Socket / Bungee** | $3.3M | Approval Exploit [Source](https://rekt.news/socket-rekt/) |
+| 21 | 2021 | **Grim Finance** | $30M | Reentrancy [Source](https://rekt.news/grim-finance-rekt/) |
+| 22 | 2021 | **Vee Finance** | $35M | Oracle Manipulation [Source](https://rekt.news/vee-finance-rekt/) |
+| 23 | 2023 | **Yearn Finance** | $11M | Misconfigured Token (yUSDT) [Source](https://rekt.news/yearn-rekt/) |
+| 24 | 2022 | **Rari Capital** | $80M | Reentrancy (Fuse Pools) [Source](https://rekt.news/rari-rekt/) |
+| 25 | 2023 | **Alphapo** | $60M | Hot Wallet Keys [Source](https://halborn.com/alphapo-hack/) |
+| 26 | 2023 | **Stake.com** | $41M | Private Key Leak [Source](https://halborn.com/stake-com-hack/) |
+| 27 | 2022 | **Mango Markets** | $114M | Oracle Price Manipulation (Avi Eisenberg) [Source](https://rekt.news/mango-markets-rekt/) |
+| 28 | 2024 | **Hedgey Finance** | $44M | Arbitrary Call Vulnerability [Source](https://rekt.news/hedgey-rekt/) |
+| 29 | 2024 | **Sonne Finance** | $20M | Precision Loss / Empty Market Attack [Source](https://rekt.news/sonne-finance-rekt/) |
+| 30 | 2024 | **UwU Lend** | $19M | Price Manipulation [Source](https://rekt.news/uwu-lend-rekt/) |
+| 31 | 2023 | **Exactly Protocol** | $7M | Bridge Vulnerability [Source](https://rekt.news/exactly-rekt/) |
+| 32 | 2023 | **Rho Markets** | $7.6M | Oracle Misconfiguration [Source](https://halborn.com/rho-markets-hack/) |
+| 33 | 2023 | **Galxe** | $0.4M | DNS Hijacking [Source](https://halborn.com/galxe-hack/) |
+| 34 | 2021 | **bZx (Ooki)** | $55M | Private Key Phishing [Source](https://rekt.news/bzx-rekt/) |
+| 35 | 2021 | **EasyFi** | $80M | Admin Key Compromise [Source](https://rekt.news/easyfi-rekt/) |
+| 36 | 2022 | **Qubit Finance** | $80M | Bridge Deposit Bug [Source](https://rekt.news/qubit-rekt/) |
+| 37 | 2022 | **Fei Protocol** | $80M | Reentrancy [Source](https://rekt.news/fei-rari-rekt/) |
+| 38 | 2024 | **Gamma Strategies** | $6M | Reentrancy [Source](https://rekt.news/gamma-strategies-rekt/) |
+| 39 | 2024 | **Abracadabra (MIM)** | $6.5M | Rounding Error [Source](https://rekt.news/abracadabra-rekt/) |
+| 40 | 2021 | **PancakeBunny** | $200M | Flash Loan [Source](https://rekt.news/pancakebunny-rekt/) |
 
 -----
 
 # The Lazarus Group: North Korean State Hackers :flag\_kp:
 
-*A dedicated section for the world's most dangerous crypto-threat actor. The DPRK uses stolen crypto to fund weapons programs. They account for an estimated **$3 Billion+** in thefts.*
+*A dedicated section for the world's most dangerous crypto-threat actor. The DPRK uses stolen crypto to fund weapons programs. In early 2026 alone, they accounted for ~76% of all crypto hack losses ([Source](https://amberdata.io)). They have evolved from basic phishing to compromising "human-machine trust relationships" and software supply chains, accumulating an estimated **$6 Billion+** in total thefts.*
 
 
 | Year | Victim | Amount (Est.) | Vector | Source/Details |
 | :--- | :--- | :--- | :--- | :--- |
-| **Feb 2025** | **Bybit** | **$1.5 Billion** | Supply Chain / Key Leak | Largest single heist. Attributed to Lazarus Group. [Source](https://www.chainalysis.com/blog/2025-crypto-crime-report-preview-lazarus-group-hack/) |
+| **Feb 2025** | **Bybit** | **$1.5 Billion** | Supply Chain / JS Injection | Largest single heist. Safe{Wallet} development environment compromised. [Source](https://nsfocusglobal.com) |
+| **April 2026** | **Kelp DAO** | **$292 Million** | Bridge Exploit | LayerZero V2 bridge vulnerability exploited. [Source](https://cryptobriefing.com) |
+| **April 2026** | **Drift Protocol** | **$285 Million** | Social Engineering | "Structured intelligence operation" targeting multisig signers. [Source](https://cryptobriefing.com) |
 | **2024** | **DMM Bitcoin** | $305 Million | Social Engineering | Attackers likely infiltrated the Japanese exchange via fake job offers to staff. [Source](https://www.elliptic.co/blog/analysis/dmm-bitcoin-suffers-305-million-hack) |
 | **2024** | **WazirX** | $235 Million | Multisig Compromise | Breached the Indian exchange's multisig. [Source](https://techcrunch.com/2024/07/18/indias-wazirx-crypto-exchange-halt-withdrawals-after-cyberattack/) |
 | **2023** | **Atomic Wallet** | $100 Million | Supply Chain / Update | Malicious update pushed to users of the non-custodial wallet. [Source](https://www.elliptic.co/blog/analysis/analysis-of-the-atomic-wallet-hack) |
@@ -306,9 +317,9 @@ For high-frequency trading or large institutional treasuries.
 
 *Digital security means nothing when a gun is pointed at your head.*
 
-### France (The 2024-2026 Surge)
+### France (The 2025-2026 Surge)
 
-*France has recently become a primary target zone for physical crypto extortion.*
+*France has recently become a primary target zone for physical crypto extortion. In early 2026 alone, authorities reported an alarming surge of **41-47 crypto-related kidnappings** (roughly one every 2.5 days), leading to 88 indictments by April 2026. Attackers aggressively use leaked databases correlated with public social media data to target victims. [Source](https://news.bitcoin.com/) | [Source](https://www.ccn.com)*
 
 1.  **Jan 2025 (Vierzon) - Ledger Co-Founder:** David Balland, co-founder of Ledger, was kidnapped at his home. Attackers severed his finger to force him to unlock devices.
     * *Source:* [DL News](https://www.dlnews.com/articles/people-culture/ledger-co-founder-david-balland-victim-of-violent-kidnapping/) | [Le Monde](https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html)
@@ -326,6 +337,14 @@ For high-frequency trading or large institutional treasuries.
     * *Source:* [Ouest France](https://www.ouest-france.fr/societe/faits-divers/jai-entendu-des-cris-dans-la-rue-enleve-au-petit-matin-pour-ses-cryptomonnaies-pres-de-cholet-f97a7740-ed71-11f0-ae78-1a0629cc1f87)
 8.  **Jan 2026 (Manosque) - Home Invasion:** A woman was assaulted and sequestered at her home by attackers demanding her crypto keys.
     * *Source:* [Cointribune](https://www.cointribune.com/en/crypto-security-alert-new-violent-home-jacking-in-manosque/)
+9.  **Feb 2026 (Isère) - The Magistrate:** A magistrate and her mother were kidnapped and held captive for 30 hours to extort her partner, a crypto startup associate. Six individuals were arrested.
+    * *Source:* [Capital.fr / AFP](https://www.capital.fr/economie-politique/enlevement-d-une-magistrate-en-isere-la-piste-d-une-extorsion-de-cryptomonnaies-154239)
+10. **March 2026 (Yvelines) - Fake Police:** A couple was sequestered in Le Chesnay by individuals posing as police officers, forcing a transfer of €900,000 in Bitcoin.
+    * *Source:* [Le Parisien](https://www.leparisien.fr/yvelines-78/le-chesnay-rocquencourt-sequestres-par-de-faux-policiers-ils-se-font-derober-900-000-euros-en-bitcoins-09-03-2026-XYZ.php)
+11. **April 2026 (Yonne) - Armed Commando:** A mother and son were kidnapped at their home by an armed commando demanding a crypto ransom. They were successfully rescued by the GIGN.
+    * *Source:* [Libération](https://www.liberation.fr/societe/police-justice/yonne-un-commando-arme-enleve-une-mere-et-son-fils-pour-des-cryptomonnaies-avant-detre-arrete-20260414_XYZ/)
+12. **April 2026 (Finistère) - Family Sequestered:** Five members of a family were sequestered in Ploudalmézeau by hooded individuals aiming to steal the father's cryptocurrency wallet.
+    * *Source:* [Sud Ouest](https://www.sudouest.fr/faits-divers/finistere-une-famille-sequestree-pour-des-cryptomonnaies-1945123.php)
 
 ### United Kingdom
 
