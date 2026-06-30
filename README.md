@@ -92,10 +92,10 @@ Let's build your configuration from scratch. Make yourself comfortable and let's
       - **Warning:** Never order to your home address\! Use a P.O. Box, an Amazon Locker (if available for direct vendors), or a friend's office.
       - *Tip:* Create a dedicated pseudonym for the order.
       - **Flagship 2025/2026 Models:**
-          - **Ledger Nano Gen5** ($179) - Clear signing & Ledger Wallet 4.0 ecosystem. [Link](https://shop.ledger.com/) | [Source](https://bitbox.swiss)
-          - **Trezor Safe 7** ($249) - Dual secure elements, color touchscreen. [Link](https://trezor.io/) | [Source](https://bitbo.io)
-          - **BitBox02 Nova** - Updated EAL6+ Infineon chip, Swiss-made. [Link](https://bitbox.swiss) | [Source](https://bitbox.swiss)
-          - **Coldcard Mk4 / Q** - 2026 firmware enables BIP-322 Proof of Reserve. [Link](https://coinkite.com/) | [Source](https://coinkite.com/)
+          - **Ledger Nano Gen5** ($179) — Clear Signing, Bluetooth/NFC, Ledger Wallet app. [Product](https://shop.ledger.com/) | [Announcement](https://www.ledger.com/academy/topics/ledgersolutions/introducing-ledger-nano-gen5)
+          - **Trezor Safe 7** ($249) — Dual secure elements (TROPIC01), color touchscreen, post-quantum firmware verification. [Product](https://trezor.io/trezor-safe-7)
+          - **BitBox02 Nova** (~$149) — EAL6+ Infineon Optiga Trust M V3, open-source firmware, iOS via Whisper BLE. [Product](https://bitbox.swiss/bitbox02/nova/) | [Announcement](https://blog.bitbox.swiss/en/introducing-bitbox02-nova/)
+          - **Coldcard Mk4 / Q** — v5.5.0+ (Mar 2026) adds BIP-322 Proof of Reserve signing. [Product](https://coinkite.com/) | [Firmware notes](https://blog.coinkite.com/bip322-wif/)
 
 -----
 
@@ -107,8 +107,8 @@ Let's build your configuration from scratch. Make yourself comfortable and let's
       - The gold standard for desktop Bitcoin wallets. Supports hardware wallets, Tor, "Coin Control", and "Stonewall" transactions (local coinjoin simulations). [Source](https://sparrowwallet.com)
       - *Link:* [Sparrow Wallet](https://sparrowwallet.com)
   - [ ] **Desktop: Wasabi Wallet**
-      - *Note:* Its native CoinJoin coordinator was discontinued in 2024 due to regulatory pressure, but it remains functional via 3rd-party coordinators. [Source](https://cryptonews.com)
-  - [ ] \~\~Samourai Wallet\~\~ *(Deprecated/Seized by DOJ 2024)*.
+      - *Note:* zkSNACKs shut down its native CoinJoin coordinator on June 1, 2024 amid U.S. regulatory pressure; the wallet still works with third-party coordinators. [Source](https://news.bitcoin.com/zksnacks-to-cease-coinjoin-transactions-affecting-wasabi-trezor-and-btcpay/)
+  - [ ] ~~Samourai Wallet~~ *(Seized by DOJ April 2024; founders sentenced Nov 2025)*. [Source](https://www.coindesk.com/policy/2024/04/24/samourai-wallet-founders-arrested-and-charged-with-money-laundering)
   - [ ] **Mobile: Envoy or Nunchuk**
       - **Envoy:** Simple, privacy-focused, Tor built-in. Frequent v2.2.x releases in early 2026 keep it robust. Good for daily spending.
       - **Nunchuk:** Security-focused, excellent for Multi-Sig and "Vault" setups.
@@ -160,7 +160,7 @@ The "Grey Man" theory applies here.
 ### Exchange Relations :bank:
 
   * **Whitelisting:** Enable "Withdrawal Address Whitelisting" on CEXs. If hacked, funds can only go to *your* hard wallet.
-  * **Withdraw Protection (2026 Defense):** Enable advanced time-lock features (e.g., Binance's "Withdraw Protection" introduced in May 2026) to freeze outgoing transfers for up to 7 days to counter physical coercion ($5 Wrench Attacks). [Source](https://news.bitcoin.com/)
+  * **Withdraw Protection (2026 Defense):** Enable exchange time-lock features (e.g., Binance's "Withdraw Protection," launched May 4, 2026) to freeze *on-chain* withdrawals for 1–7 days under physical coercion ($5 Wrench Attacks). This is an internal policy lock—not a cryptographic guarantee—and does not block lawful court orders. [Source](https://www.coindesk.com/business/2026/05/04/binance-is-launching-a-withdrawal-lock-to-help-deter-crypto-wrench-attacks)
   * **Anti-Phishing Code:** Set this up in exchange settings. Every legitimate email will contain your secret word. No word? It's a scam.
 
 -----
@@ -233,11 +233,15 @@ For high-frequency trading or large institutional treasuries.
 
 *A Wall of Shame to remind you that even the giants fall. We separate this into CEX (Centralized Exchange) failures and DeFi (Decentralized Finance) exploits.*
 
+> **2026 snapshot (through Jun 30):** Q2 2026 is the most-hacked quarter on record by incident count—**83 exploits** and **~$755M** stolen per DefiLlama/Cointelegraph analysis, with bridges still the costliest vector. April's Kelp DAO + Drift hits alone drove most of the dollar volume; May–June shifted toward **private-key / ops failures** (Resolv AWS KMS, Taiko GitHub leak, Humanity phishing) and **deprecated-contract drains** (Raydium AMM V3, Aztec Connect). [Source](https://cointelegraph.com/news/q2-2026-most-hacked-quarter-record-83-incidents)
+
 ### 🏛️ Centralized Exchange (CEX) & Infrastructure Hacks
 
 | Year | Entity | Amount Lost | Vector | Lesson |
 | :--- | :--- | :--- | :--- | :--- |
-| **Feb 2025** | **Bybit** | **$1.5B** | Supply Chain / JS Injection | **Largest crypto theft in history.** Safe{Wallet} development environment compromised by Lazarus Group. [Source](https://nsfocusglobal.com) |
+| **Jun 2026** | **Polymarket** | **$2.9M** | Supply Chain / Frontend | Malicious script injected via compromised third-party vendor dependency; users drained via wallet approvals (contracts untouched). [Source](https://cointelegraph.com/news/polymarket-vendor-compromise-drains-29m-users) |
+| **Apr 2026** | **Grinex** | **$13M** | Hot Wallet / Exit? | Russia-linked CEX (Garantex successor) halted ops after ~$13.7M USDT drained; funds swapped to TRX. [Source](https://www.coindesk.com/business/2026/04/17/russia-linked-grinex-exchange-halts-operations-after-usd13-million-state-backed-hack) |
+| **Feb 2025** | **Bybit** | **$1.5B** | Supply Chain / JS Injection | **Largest crypto theft in history.** Safe{Wallet} dev machine compromised; malicious JS redirected a cold-wallet transfer (FBI attributed to Lazarus). [Source](https://www.bleepingcomputer.com/news/security/fbi-confirms-lazarus-hackers-were-behind-15b-bybit-crypto-heist/) |
 | **2024** | **DMM Bitcoin** | $305M | Social Eng. / Wallet | Fake job offers to employees allowed deep system access. [Source](https://chainalysis.com/blog/2024-crypto-hack-report/) |
 | **2022** | **FTX / Alameda** | ~$477M | Insider / Sim Swap | The "Bank Run" hack. Occurred immediately after bankruptcy filing. [Source](https://www.elliptic.co/blog/the-477-million-ftx-hack-a-new-blockchain-trail) |
 | **2018** | **Coincheck** | $530M | Phishing / Hot Wallet | Employee opened a malware email. Funds (NEM) were in hot wallets. [Source](https://www.coindesk.com/markets/2018/01/26/crypto-exchange-coincheck-halts-withdrawals-amid-hack-rumors/) |
@@ -252,8 +256,17 @@ For high-frequency trading or large institutional treasuries.
 | 2 | 2021 | **Poly Network** | $611M | Cross-Chain Contract Vulnerability [Source](https://rekt.news/poly-network-rekt/) |
 | 3 | 2022 | **Binance Bridge** | $570M | IAVL Proof Verification Exploit [Source](https://rekt.news/bnb-bridge-rekt/) |
 | 4 | 2022 | **Wormhole** | $325M | Signature Verification Bypass [Source](https://rekt.news/wormhole-rekt/) |
-| - | 2026 | **Kelp DAO** | $292M | LayerZero V2 Bridge Exploit (Lazarus) [Source](https://cryptobriefing.com) |
-| - | 2026 | **Drift Protocol** | $285M | Social Eng. / Multisig (Lazarus) [Source](https://cryptobriefing.com) |
+| — | 2026 | **Kelp DAO** | $292M | Off-chain RPC / 1-of-1 DVN forgery (Lazarus) [Source](https://www.chainalysis.com/blog/kelpdao-bridge-exploit-april-2026/) |
+| — | 2026 | **Drift Protocol** | $285M | 6-month social eng. / multisig (Lazarus) [Source](https://www.chainalysis.com/blog/lessons-from-the-drift-hack/) |
+| — | 2026 | **Humanity Protocol** | $36M | Phishing / Admin keys on laptop (DPRK tooling suspected) [Source](https://cointelegraph.com/news/humanity-protocol-hack-linked-north-korean-actors-quantstamp) |
+| — | 2026 | **Resolv** | $25M | AWS KMS key compromise / unbacked USR mint [Source](https://www.chainalysis.com/blog/lessons-from-the-resolv-hack/) |
+| — | 2026 | **Verus Bridge** | $11.6M | Forged cross-chain import / missing amount validation [Source](https://cointelegraph.com/news/verus-ethereum-bridge-reportedly-exploited-for-millions) |
+| — | 2026 | **THORChain** | $10.7M | GG20 TSS key-material leakage (malicious node) [Source](https://blog.thorchain.org/thorchain-exploit-report-1) |
+| — | 2026 | **Syscoin Bridge** | ~$10M | SPV proof parsing mismatch (funds later returned & burned) [Source](https://syscoin.org/news/technical-postmortem-syscoin-bridge-incident-recovery-and-remediation) |
+| — | 2026 | **Aztec Connect** | $2.2M | Deprecated ZK rollup: L1/L2 settlement boundary gap [Source](https://aztec-labs.com/blog/aztec-connect-incident.html) |
+| — | 2026 | **Taiko** | $1.7M | RSA signing key exposed on public GitHub (SGX prover) [Source](https://www.halborn.com/blog/post/explained-the-taiko-bridge-hack-june-2026) |
+| — | 2026 | **Raydium** | $1.3M | Deprecated AMM V3 LP-mint validation flaw [Source](https://thedefiant.io/news/hacks/raydium-drained-1-3m-attacker-bridges-ethereum-tornado-cash) |
+| — | 2026 | **Gnosis Pay** | $0.27M | Zodiac Delay/Roles ERC-1271 signature bypass [Source](https://engineering.gnosisguild.org/posts/zodiac-post-mortem) |
 | 5 | 2024 | **Orbit Chain** | $81M | Bridge Multi-sig Compromise [Source](https://rekt.news/orbit-chain-rekt/) |
 | 6 | 2023 | **Euler Finance** | $197M | Flash Loan / Logic Error [Source](https://rekt.news/euler-rekt/) |
 | 7 | 2022 | **Nomad Bridge** | $190M | Logic Error (Copy-paste vulnerability) [Source](https://rekt.news/nomad-rekt/) |
@@ -295,14 +308,15 @@ For high-frequency trading or large institutional treasuries.
 
 # The Lazarus Group: North Korean State Hackers :flag\_kp:
 
-*A dedicated section for the world's most dangerous crypto-threat actor. The DPRK uses stolen crypto to fund weapons programs. In early 2026 alone, they accounted for ~76% of all crypto hack losses ([Source](https://amberdata.io)). They have evolved from basic phishing to compromising "human-machine trust relationships" and software supply chains, accumulating an estimated **$6 Billion+** in total thefts.*
+*A dedicated section for the world's most dangerous crypto-threat actor. The DPRK uses stolen crypto to fund weapons programs. Through April 2026, North Korea-linked groups accounted for **76%** of global crypto hack losses—$577M from just two April incidents (Drift + KelpDAO)—per TRM Labs ([Source](https://www.trmlabs.com/resources/blog/north-korea-stole-76-of-all-crypto-hack-value-in-2026-with-just-two-attacks)). **June 2026:** Quantstamp linked Humanity Protocol's $36M admin-key theft to DPRK tradecraft (fake Bithumb phishing email). Attack pattern in 2026: fewer incidents, higher precision—long social-engineering campaigns and off-chain infrastructure compromise over brute-force contract bugs. **$6B+** in attributed cumulative theft since 2017.*
 
 
 | Year | Victim | Amount (Est.) | Vector | Source/Details |
 | :--- | :--- | :--- | :--- | :--- |
-| **Feb 2025** | **Bybit** | **$1.5 Billion** | Supply Chain / JS Injection | Largest single heist. Safe{Wallet} development environment compromised. [Source](https://nsfocusglobal.com) |
-| **April 2026** | **Kelp DAO** | **$292 Million** | Bridge Exploit | LayerZero V2 bridge vulnerability exploited. [Source](https://cryptobriefing.com) |
-| **April 2026** | **Drift Protocol** | **$285 Million** | Social Engineering | "Structured intelligence operation" targeting multisig signers. [Source](https://cryptobriefing.com) |
+| **Feb 2025** | **Bybit** | **$1.5 Billion** | Supply Chain / JS Injection | Largest single heist. Safe{Wallet} dev machine compromised; FBI attributed to Lazarus. [Source](https://www.bleepingcomputer.com/news/security/fbi-confirms-lazarus-hackers-were-behind-15b-bybit-crypto-heist/) |
+| **April 2026** | **Kelp DAO** | **$292 Million** | Off-chain RPC / DVN Forgery | Forged cross-chain message via poisoned RPC nodes (1-of-1 DVN config). [Source](https://www.chainalysis.com/blog/kelpdao-bridge-exploit-april-2026/) |
+| **April 2026** | **Drift Protocol** | **$285 Million** | Social Engineering | Six-month infiltration; durable-nonce multisig attack (UNC4736). [Source](https://www.securityweek.com/north-korean-hackers-drain-285-million-from-drift-in-10-seconds/) |
+| **June 2026** | **Humanity Protocol** | **$36 Million** | Phishing / Key Theft | Fake Bithumb email → malware on director's laptop; 7 admin keys stolen. DPRK tooling suspected. [Source](https://cointelegraph.com/news/humanity-protocol-hack-linked-north-korean-actors-quantstamp) |
 | **2024** | **DMM Bitcoin** | $305 Million | Social Engineering | Attackers likely infiltrated the Japanese exchange via fake job offers to staff. [Source](https://www.elliptic.co/blog/analysis/dmm-bitcoin-suffers-305-million-hack) |
 | **2024** | **WazirX** | $235 Million | Multisig Compromise | Breached the Indian exchange's multisig. [Source](https://techcrunch.com/2024/07/18/indias-wazirx-crypto-exchange-halt-withdrawals-after-cyberattack/) |
 | **2023** | **Atomic Wallet** | $100 Million | Supply Chain / Update | Malicious update pushed to users of the non-custodial wallet. [Source](https://www.elliptic.co/blog/analysis/analysis-of-the-atomic-wallet-hack) |
@@ -319,7 +333,7 @@ For high-frequency trading or large institutional treasuries.
 
 ### France (The 2025-2026 Surge)
 
-*France has recently become a primary target zone for physical crypto extortion. In early 2026 alone, authorities reported an alarming surge of **41-47 crypto-related kidnappings** (roughly one every 2.5 days), leading to 88 indictments by April 2026. Attackers aggressively use leaked databases correlated with public social media data to target victims. [Source](https://news.bitcoin.com/) | [Source](https://www.ccn.com)*
+*France has become a primary target zone for physical crypto extortion. France's National Anti-Organized Crime Prosecutor's Office (PNACO) recorded **47 crypto-linked kidnappings or sequestrations through April 2026** (18 in 2024, 67 in 2025), with **88 people charged** across 12 consolidated investigations by late April. By mid-June, police leadership cited **~70+ incidents since January 2026** as the pace accelerated into Provence and Île-de-France. Attackers correlate leaked exchange databases (Ledger, tax tools like Waltio) with public social media to select targets. [Source](https://www.crowdfundinsider.com/2026/04/275901-french-authorities-indict-offenders-in-crypto-wrench-attacks-and-targeted-kidnapping-ring/) | [Source](https://www.laprovence.com/article/faits-divers-justice/2193885092828214/quatre-hommes-arretes-en-plein-braquage-sur-fond-de-cryptomonnaies-pres-de-marseille)*
 
 1.  **Jan 2025 (Vierzon) - Ledger Co-Founder:** David Balland, co-founder of Ledger, was kidnapped at his home. Attackers severed his finger to force him to unlock devices.
     * *Source:* [DL News](https://www.dlnews.com/articles/people-culture/ledger-co-founder-david-balland-victim-of-violent-kidnapping/) | [Le Monde](https://www.lemonde.fr/pixels/article/2025/01/23/les-kidnappeurs-d-un-cofondateur-de-ledger-et-de-sa-compagne-interpelles-apres-une-gigantesque-chasse-a-l-homme_6512799_4408996.html)
@@ -335,16 +349,22 @@ For high-frequency trading or large institutional treasuries.
     * *Source:* [Cryptoast](https://cryptoast.fr/enlevement-pere-famille-val-doise-rancon-crypto/)
 7.  **Jan 2026 (Cholet) - The "Software Architect":** A 43-year-old crypto investor was kidnapped at his home, tied up, and released 50km away.
     * *Source:* [Ouest France](https://www.ouest-france.fr/societe/faits-divers/jai-entendu-des-cris-dans-la-rue-enleve-au-petit-matin-pour-ses-cryptomonnaies-pres-de-cholet-f97a7740-ed71-11f0-ae78-1a0629cc1f87)
-8.  **Jan 2026 (Manosque) - Home Invasion:** A woman was assaulted and sequestered at her home by attackers demanding her crypto keys.
-    * *Source:* [Cointribune](https://www.cointribune.com/en/crypto-security-alert-new-violent-home-jacking-in-manosque/)
-9.  **Feb 2026 (Isère) - The Magistrate:** A magistrate and her mother were kidnapped and held captive for 30 hours to extort her partner, a crypto startup associate. Six individuals were arrested.
-    * *Source:* [Capital.fr / AFP](https://www.capital.fr/economie-politique/enlevement-d-une-magistrate-en-isere-la-piste-d-une-extorsion-de-cryptomonnaies-154239)
-10. **March 2026 (Yvelines) - Fake Police:** A couple was sequestered in Le Chesnay by individuals posing as police officers, forcing a transfer of €900,000 in Bitcoin.
-    * *Source:* [Le Parisien](https://www.leparisien.fr/yvelines-78/le-chesnay-rocquencourt-sequestres-par-de-faux-policiers-ils-se-font-derober-900-000-euros-en-bitcoins-09-03-2026-XYZ.php)
-11. **April 2026 (Yonne) - Armed Commando:** A mother and son were kidnapped at their home by an armed commando demanding a crypto ransom. They were successfully rescued by the GIGN.
-    * *Source:* [Libération](https://www.liberation.fr/societe/police-justice/yonne-un-commando-arme-enleve-une-mere-et-son-fils-pour-des-cryptomonnaies-avant-detre-arrete-20260414_XYZ/)
-12. **April 2026 (Finistère) - Family Sequestered:** Five members of a family were sequestered in Ploudalmézeau by hooded individuals aiming to steal the father's cryptocurrency wallet.
-    * *Source:* [Sud Ouest](https://www.sudouest.fr/faits-divers/finistere-une-famille-sequestree-pour-des-cryptomonnaies-1945123.php)
+8.  **Jan 2026 (Sarthe) - Family Sequestered:** A couple and their three children were held at gunpoint overnight in La Chapelle-Saint-Aubin (near Le Mans) to extort cryptocurrency access codes.
+    * *Source:* [Ouest-France](https://www.ouest-france.fr/societe/faits-divers/enlevement-et-sequestration-sur-fond-de-cryptomonnaies-des-affaires-de-louest-confiees-au-tribunal-judiciaire-de-paris-c8de59d6-fe14-11f0-be0e-292cccbfadc3)
+9.  **Jan 2026 (Manosque) - Home Invasion:** A woman was assaulted and sequestered at her home by attackers demanding her partner's crypto keys; a USB drive was stolen.
+    * *Source:* [Le Parisien](https://www.leparisien.fr/faits-divers/victime-dun-vol-de-cryptomonnaie-une-jeune-femme-sequestree-par-plusieurs-individus-cagoules-a-manosque-06-01-2026-WS2ED2I3UFHB7JRDMUE2XXRVYI.php) | [Ouest-France](https://www.ouest-france.fr/provence-alpes-cote-dazur/manosque-04100/vol-de-cryptomonnaies-une-femme-sequestree-a-manosque-par-des-personnes-encagoulees-fbc47bda-ebba-11f0-b3e3-e584d3ee0112)
+10. **Feb 2026 (Isère) - The Magistrate:** A magistrate and her mother were kidnapped and held captive for 30 hours to extort her partner, a crypto startup associate. Six individuals were arrested.
+    * *Source:* [The Guardian](https://www.theguardian.com/world/2026/feb/08/french-police-arrest-five-over-crypto-linked-magistrate-kidnapping) | [Le Monde](https://www.lemonde.fr/societe/article/2026/02/11/six-jeunes-mis-en-examen-a-la-suite-de-l-enlevement-d-une-magistrate-grenobloise-le-parquet-national-anticriminalite-organisee-enquete_6666389_3224.html)
+11. **March 2026 (Yvelines) - Fake Police:** A couple was sequestered in Le Chesnay by individuals posing as police officers, forcing a transfer of €900,000 in Bitcoin.
+    * *Source:* [Le Parisien](https://www.leparisien.fr/yvelines-78/le-chesnay-rocquencourt-900-000-euros-en-bitcoin-derobes-lors-dun-violent-home-jacking-09-03-2026-L2ZCB6SJSRB5VJJQEYSMI2ASTM.php) | [Franceinfo](https://www.franceinfo.fr/france/ile-de-france/yvelines/un-couple-de-quinquagenaires-sequestre-et-force-de-transferer-900-000-euros-en-bitcoins-dans-les-yvelines_7856444.html)
+12. **April 2026 (Yonne) - Armed Commando:** A mother and son were kidnapped at their home by an armed commando demanding a crypto ransom. They were successfully rescued by the GIGN.
+    * *Source:* [Le Monde](https://www.lemonde.fr/societe/article/2026/04/14/cryptomonnaies-une-mere-et-son-fils-liberes-par-le-gign-apres-leur-enlevement-en-bourgogne-quatre-personnes-interpellees_6679919_3224.html) | [Ouest-France](https://www.ouest-france.fr/societe/justice/enlevement-sur-fond-de-cryptomonnaies-dans-lyonne-six-personnes-agees-de-17-a-20-ans-mises-en-examen-14faa522-3a8d-11f1-9f4b-ab6e07a6e59a)
+13. **April 2026 (Finistère) - Family Sequestered:** Five members of a family were sequestered in Ploudalmézeau by hooded individuals aiming to steal the father's cryptocurrency wallet (~€700k).
+    * *Source:* [France 3](https://france3-regions.franceinfo.fr/bretagne/finistere/brest/5-membres-d-une-famille-de-ploudalmezeau-sequestres-pour-un-portefeuille-de-cryptomonnaie-3339032.html) | [20 Minutes](https://www.20minutes.fr/faits_divers/4219671-20260422-bretagne-famille-enfants-sequestree-delestee-700-000-euros-cryptomonnaies)
+14. **May 2026 (Seine-et-Marne) - Fake Delivery:** A crypto-company CEO's wife was targeted at home in Villenoy by attackers posing as delivery workers; neighbors intervened; two suspects (ages 15 & 18) arrested with fake gun and zip ties.
+    * *Source:* [Le Parisien](https://www.leparisien.fr/seine-et-marne-77/seine-et-marne-deux-interpellations-apres-un-cambriolage-rate-chez-un-patron-dune-societe-de-cryptomonnaie-21-05-2026-WZLKWTPGCRDJZJTB7RY25F5MKI.php) | [Ouest-France](https://www.ouest-france.fr/economie/cryptomonnaie/tentative-denlevement-sur-fond-de-cryptomonnaies-une-femme-sauvee-par-ses-voisins-en-seine-et-marne-c5add6d6-55e6-11f1-8fb2-d4cef07cd2eb)
+15. **June 2026 (Bouches-du-Rhône) - Night Commandos:** In one night, a commando hit three homes (Marseille 13e, Gardanne, Gignac-la-Nerthe); two women seized in Gignac during a forced crypto transfer; four attackers caught in flagrante by BRB Marseille.
+    * *Source:* [La Provence](https://www.laprovence.com/article/faits-divers-justice/2193885092828214/quatre-hommes-arretes-en-plein-braquage-sur-fond-de-cryptomonnaies-pres-de-marseille) | [Journal du Coin](https://journalducoin.com/actualites/crypto-4-hommes-marseille-serie-sequestrations-extorquer-cryptomonnaies/)
 
 ### United Kingdom
 
@@ -390,9 +410,9 @@ For high-frequency trading or large institutional treasuries.
 
 ### 1\. AI-Driven Social Engineering
 
-  * **Deepfakes:** Scammers will use real-time video/voice cloning of CEOs or family members to authorize transactions. (Already seen in traditional finance, coming to crypto governance).
-  * **The 82:1 Ratio:** Autonomous AI attack agents will outnumber human defenders 82 to 1 by 2026.
-  * **Hyper-Personalization:** AI will scrape your entire digital footprint to create "perfect" spear-phishing emails that are impossible to distinguish from reality.
+  * **Deepfakes:** Scammers use real-time video/voice cloning of CEOs or family members to authorize transactions. (Already seen in traditional finance; increasingly relevant for multisig and treasury governance.)
+  * **The 82:1 Machine Identity Gap:** Enterprise environments now average ~82 machine identities (API keys, bots, autonomous AI agents) per human employee—creating a massive, often unmonitored attack surface that adversaries target instead of humans directly. [Source](https://www.paloaltonetworks.com/perspectives/the-821-problem-securing-the-invisible-majority/)
+  * **Hyper-Personalization:** AI scrapes your entire digital footprint to create spear-phishing that is nearly indistinguishable from legitimate communication.
 
 ### 2\. Quantum Threats (Q-Day)
 
@@ -401,7 +421,8 @@ For high-frequency trading or large institutional treasuries.
 
 ### 3\. Data Poisoning & Supply Chain
 
-  * **Malicious Libraries:** Attackers will poison open-source code repositories (npm, pip) used by wallet developers, injecting dormant backdoors that activate only when large balances are detected.
+  * **Malicious Libraries:** Attackers poison open-source code repositories (npm, pip) used by wallet developers, injecting dormant backdoors that activate only when large balances are detected.
+  * **OpsSec Failures (2026 trend):** Private keys committed to GitHub (Taiko), AWS KMS policy gaps (Resolv), and vendor frontend injections (Polymarket) now rival smart-contract bugs as loss drivers.
   * **Model Poisoning:** Manipulating the data used to train AI security bots, rendering them blind to specific attack vectors.
 
 -----
@@ -436,6 +457,9 @@ For high-frequency trading or large institutional treasuries.
 
   * **SEAL 911:** [github.com/security-alliance/seal-911](https://github.com/security-alliance/seal-911)
   * **Rekt Database:** [Rekt.news](https://rekt.news) (Detailed post-mortems of hacks).
+  * **TRM Labs Intelligence:** [trmlabs.com/resources/blog](https://www.trmlabs.com/resources/blog) (State-actor attribution, hack trends).
+  * **Chainalysis Threat Intel:** [chainalysis.com/blog](https://www.chainalysis.com/blog/) (Incident analysis and laundering patterns).
+  * **Jameson Lopp — Physical Attack Tracker:** [github.com/jlopp/physical-bitcoin-attacks](https://github.com/jlopp/physical-bitcoin-attacks) (Open dataset of wrench attacks worldwide).
   * **Privacy Guides:** [PrivacyGuides.org](https://www.privacyguides.org)
   * **Revoke Cash:** [Revoke.cash](https://revoke.cash)
 

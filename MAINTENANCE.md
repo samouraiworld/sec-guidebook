@@ -7,9 +7,11 @@ To ensure the `sec-guidebook` repository remains a trusted and professional reso
 - [ ] **Content Validity**: Review "Recent Attacks" sections. If an attack is debunked or details change significantly, update the entry.
 
 ## Updating the Guide
-- [ ] **Source Policy**: **STRICT.** Only add incidents backed by a *direct link* to a reputable news outlet (e.g., Le Parisien, BBC, NYT, The Guardian).
-    - ❌ NO generic homepages (e.g., `https://cnn.com`)
+- [ ] **Source Policy**: **STRICT.** Only add incidents backed by a *direct link* to a reputable news outlet (e.g., Le Parisien, BBC, NYT, The Guardian) or primary intelligence firm (Chainalysis, TRM Labs, FBI/DOJ).
+    - ❌ NO generic homepages (e.g., `https://cnn.com`, `https://cryptobriefing.com`)
+    - ❌ NO placeholder or fabricated URLs (e.g., paths ending in `XYZ`)
     - ❌ NO social media threads as sole sources (unless from official verified authorities).
+    - ✅ Prefer manufacturer announcements for hardware specs; prefer law-enforcement or blockchain-intel reports for hacks.
 - [ ] **Formatting**: Keep the Markdown clean.
     - Use `-` or `1.` consistently (Standard is numbered lists for sequences).
     - Ensure dates are formatted as `**Mon Year (Location) - Title:**`.
